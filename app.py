@@ -26,6 +26,6 @@ if st.button("Predict"):
     pred = model.predict([[batsman_enc, bowler_enc]])[0]
     
     if pred == 1:
-        st.success("🎉 yaayy! Likely to chase 15 runs!")
+        st.success("🎉 yaayy! Likely to chase 10 runs!")
     else:
-        st.error("❌ nayyy! Unlikely to chase 15 runs.")
+        st.error("❌ nayyy! Unlikely to chase 10 runs.")
